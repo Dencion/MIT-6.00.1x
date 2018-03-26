@@ -1,0 +1,12 @@
+def calculateHandlen(hand):
+    """ 
+    Returns the length (number of letters) in the current hand.
+    
+    hand: dictionary (string int)
+    returns: integer
+    """
+    wordCount = 0
+    for element in hand:
+        wordCount += hand.get(element, 0)
+
+    return wordCount
